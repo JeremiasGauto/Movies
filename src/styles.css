@@ -27,7 +27,7 @@ body {
   width: 95%;
   max-width: 120rem;
 
-  width: min(120rem, 95%);
+  width: min(95%, 120rem);
   margin: 0 auto;
 }
 
@@ -45,6 +45,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 3rem;
 }
 .moviecard h3 {
   font-size: 2.5rem;
@@ -70,4 +71,13 @@ img {
   transform: scale(1);
   transition: ease 1s;
   
+}
+
+@media(min-width:768px){
+  .content{
+    
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr) ;
+  }
+ 
 }
