@@ -50,34 +50,61 @@ img {
 .moviecard h3 {
   font-size: 2.5rem;
   text-align: center;
-  
 }
 
 .moviecard-image {
   border-radius: 0.75rem;
   overflow: hidden;
-  
-  
-  
 }
 
-.moviecard .moviecard-image img:hover {
-  transform: scale(1.05);
-  transition: ease 1s;
-  
+/*----------------  ANIMACION DE IMAGEN  ------------------- */
+
+.moviecard:hover .moviecard-image {
+  transform: scale(1.7);
+  transition: ease 2s;
 }
 
-.moviecard .moviecard-image :not(:hover) {
+.moviecard:not(:hover) .moviecard-image {
   transform: scale(1);
   transition: ease 1s;
-  
+}
+/*------------------------------     X   ------------------*/
+
+.moviecard {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-@media(min-width:768px){
-  .content{
-    
-   display: grid; 
-   grid-template-columns: repeat(3, 1fr) ;
+.moviecard-vote {
+  font-size: 1.5;
+}
+
+.moviecard-description {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: center;
+  z-index: 10;
+  bottom: -100%;
+  border-radius: 0.75rem;
+  left: 0;
+  transition: all 0.1s linear;
+}
+
+.moviecard:hover .moviecard-description {
+  bottom: 0;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
- 
 }

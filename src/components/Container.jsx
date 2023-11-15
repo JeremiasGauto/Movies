@@ -28,14 +28,14 @@ function Container() {
             const respuesta = await fetch(url, config)
 
           if (respuesta.status === 200) {
-              console.log(respuesta.status)
+              
               const datos = await respuesta.json()
-              console.log(datos)
+              
                 if (movies.length === 0) {
                     setMovies(datos.results)
-                    console.log(datos.results)
+                    
                 } else {
-                    setMovies([movies, ...datos.results])
+                    setMovies([...movies, ...datos.results])
                 }
 
             }
@@ -49,6 +49,12 @@ function Container() {
     const handleClick = (event) => {
         event.preventDefault()
         setPage(page + 1)
+    }
+
+    const infiniteScroll = (e) => {
+        console.log(window.innerHeight)
+        console.log(document.documentElement.clientTop)
+        
     }
 
     useEffect(() => {
