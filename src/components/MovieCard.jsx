@@ -1,5 +1,6 @@
 import React from 'react'
 import portada from "../assets/portada.jpg"
+import StarRating from './StarRating'
 
 
 function MovieCard ({ pelicula })// children key
@@ -20,7 +21,7 @@ function MovieCard ({ pelicula })// children key
                 
                 <span className="moviecard-vote">
                     
-                    ⭐{Math.round(vote_average)}
+                    <StarRating rating={Math.round(vote_average)/2} />
 
                 </span>
             </div>

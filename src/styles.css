@@ -102,6 +102,10 @@ img {
   opacity: 1;
 }
 
+.star{
+  font-size: 3rem;
+}
+
 @media (min-width: 768px) {
   .content {
     display: grid;
