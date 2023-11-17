@@ -15,6 +15,11 @@ html {
 body {
   font: size 1.6rem;
   box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, #691771, #5f2a7b, #543782, #494287, #404b89, #325690, #236095, #156a98, #00799e, #0087a0, #01949e, #34a19a);
+}
+
+.dark-theme{
+  background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #000000, #050505, #1d1d1d, #443b47, #4f4453, #594d5f, #64576b);
 }
 
 .title {
@@ -106,9 +111,27 @@ img {
   font-size: 3rem;
 }
 
+.btn-seemore{
+  margin-left: 40%;
+  box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#312c2c;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
 @media (min-width: 768px) {
   .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
