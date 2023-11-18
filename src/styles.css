@@ -18,15 +18,17 @@ body {
   background-image: linear-gradient(to right bottom, #691771, #5f2a7b, #543782, #494287, #404b89, #325690, #236095, #156a98, #00799e, #0087a0, #01949e, #34a19a);
 }
 
-.dark-theme{
-  background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #000000, #050505, #1d1d1d, #443b47, #4f4453, #594d5f, #64576b);
-}
+
 
 .title {
   font-size: 10rem;
   font-weight: 900;
   text-align: center;
+  color: #D1D7E0;
+  filter: drop-shadow(5px 5px 10px #000000);
 }
+
+
 
 .container {
   width: 95%;
@@ -40,6 +42,8 @@ body {
   padding: 1rem;
   border-radius: 0.75rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  
 }
 
 img {
@@ -112,9 +116,10 @@ img {
 }
 
 .btn-seemore{
-  margin-left: 40%;
-  box-shadow: 3px 4px 0px 0px #899599;
-	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+     position: relative;
+   left: 43%;
+
+  background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
 	background-color:#ededed;
 	border-radius:15px;
 	border:1px solid #d6bcd6;
@@ -126,6 +131,16 @@ img {
 	padding:7px 25px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e1e2ed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
+.btn-seemore:hover {
+	background:linear-gradient(to bottom, #353435 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.btn-seemore:active {
+	position:relative;
+	top:1px;
 }
 
 @media (min-width: 768px) {
